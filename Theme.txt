@@ -1,8 +1,6 @@
-Name: WorldOfWarcraft.MediaTheme
-Author: The Orchard Team
-Website: http://www.orchardproject.net
-Description: Description for the theme
+Name: World of Warcraft (Media Theme)
+Author: Benedek Farkas
+Website: http://elementalgankery.hu
+Description: Media Theme for Orchard CMS for World of Warcraft-related websites.
 Version: 1.0
-BaseTheme: $$BaseTheme$$
-# todo: provide tags
-# Tags: Classic, Serif
+BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
