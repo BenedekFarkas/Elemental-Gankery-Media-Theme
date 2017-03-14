@@ -1,7 +1,4 @@
-﻿/* Site
-   The root stylesheet, importing everything. The single stylesheet that's included and that imports all other styles.
-***************************************************************/
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+﻿/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -268,9 +265,6 @@ th {
 }
 /* Breadcrumbs
    Imports styles needed for removing browser inconsistencies.
-***************************************************************/
-/* Breadcrumbs
-   Some LESS variables that you can configure from your derived theme.
 ***************************************************************/
 /* Common
    Common imports needed in every PGBBT LESS file.
@@ -3654,3 +3648,6 @@ ol {
   width: 100%;
   height: 100%;
 }
+/* Breadcrumbs
+   Some LESS variables that you can configure from your derived theme.
+***************************************************************/
