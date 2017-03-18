@@ -84,6 +84,12 @@
     <Content Include="Styles\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
     </Content>
+    <Content Include="Styles\widgets.css">
+      <DependentUpon>widgets.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\widgets.min.css">
+      <DependentUpon>widgets.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -109,12 +115,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="compilerconfig.json" />
-    <Content Include="compilerconfig.json.defaults">
+    <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
-    </Content>
+    </None>
+    <Content Include="Images\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Content Include="Styles\widgets.less" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\variables-wow.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-Name-MainSiteSearch.liquid" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
