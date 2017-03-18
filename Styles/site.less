@@ -1,11 +1,61 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/reset";
-@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/structure";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/general";
-@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
-@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/breadcrumbs";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/pagination";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/misc";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/media";
 
+@import "structure";
+@import "type";
 @import "variables";
+@import "mixins";
+@import "navigation";
+@import "forms";
 @import "widgets";
+
+body
+{
+    background-color: @theme-grey;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: @wow-quality-poor;
+
+    .metadata
+    {
+        color: @wow-class-warrior;
+    }
+
+    #header, #footer, .zone-navigation
+    {
+        background-color: @theme-dark;
+    }
+
+    .zone-navigation
+    {
+        border-bottom: 1px solid @wow-expansion-legion;
+    }
+
+    #footer
+    {
+        border-top: 1px solid @wow-faction-horde;
+    }
+
+    .link-style;
+}
+
+#branding
+{
+    a
+    {
+        color: @wow-faction-horde;
+        box-shadow: none;
+        transition: text-shadow 1s;
+        -webkit-transition: text-shadow 0.66s;
+
+        &:hover
+        {
+            color: @wow-faction-horde !important;
+            text-decoration: none;
+            text-shadow: 0px 0px 40px @wow-expansion-legion;
+        }
+    }
+}

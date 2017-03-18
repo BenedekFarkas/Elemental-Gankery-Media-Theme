@@ -72,23 +72,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\favicon.ico" />
+    <Content Include="Styles\forms.less" />
+    <None Include="Styles\mixins.less" />
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.min.css">
       <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\widgets.css">
-      <DependentUpon>widgets.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\widgets.min.css">
-      <DependentUpon>widgets.css</DependentUpon>
     </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
@@ -119,6 +109,12 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Images\Web.config" />
+    <Content Include="Styles\structure.less" />
+    <Content Include="Content\fonts\egfont.ttf" />
+    <Content Include="Styles\type.less" />
+    <Content Include="Styles\navigation.less" />
+    <Content Include="Content\fonts\OpenSans-Regular.woff" />
+    <None Include="Views\Branding.liquid" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\widgets.less" />
@@ -128,11 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\variables.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\variables-wow.less" />

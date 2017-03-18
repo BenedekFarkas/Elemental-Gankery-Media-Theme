@@ -1,0 +1,15 @@
+﻿@import "variables-wow";
+
+.link-style
+{
+    a
+    {
+        color: @wow-faction-alliance;
+
+        &.active, &:hover
+        {
+            text-decoration: none;
+            color: @wow-quality-heirloom !important;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/structure";
+
+// Everything below should be inside #layout-wrapper too, but the the & Combinator would mess it up, see: https://github.com/less/less.js/issues/1500
+#layout-main-container
+{
+    .aside-1 &, .aside-2 &
+    {
+        #aside-first
+        {
+            .make-column(2);
+        }
+
+        #layout-content
+        {
+            .make-column(7);
+        }
+
+        #aside-second
+        {
+            .make-column(3);
+        }
+    }
+
+    .aside-12 &
+    {
+        #aside-first, #aside-second
+        {
+            .make-column(@grid-columns / 4);
+        }
+
+        #layout-content
+        {
+            .make-column(@grid-columns / 2);
+        }
+    }
+}
+
+.zone-messages
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.zone-content
+{
+    padding-top: 0;
+}

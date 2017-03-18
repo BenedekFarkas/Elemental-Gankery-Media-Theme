@@ -1,0 +1,45 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
+@import "variables";
+@import "mixins";
+
+.zone-navigation
+{
+    .widget-menu-widget
+    {
+        font-weight: bold;
+        font-size: 2rem;
+
+        .menu
+        {
+            :hover
+            {
+                background-color: @theme-dark;
+            }
+
+            .dropdown ul
+            {
+                min-width: 100%;
+                background-color: @theme-dark;
+                border-color: @theme-lightgrey;
+
+                li
+                {
+                    min-height: 40px;
+                    vertical-align: middle;
+
+                    .link-style;
+
+                    a
+                    {
+                        padding-top: 10px;
+                        height: 100%;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .link-style;
+        }
+    }
+}
