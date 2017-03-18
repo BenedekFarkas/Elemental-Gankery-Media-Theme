@@ -114,6 +114,7 @@
     <Content Include="Styles\type.less" />
     <Content Include="Styles\navigation.less" />
     <Content Include="Content\fonts\OpenSans-Regular.woff" />
+    <Content Include="Styles\pagination.less" />
     <None Include="Views\Branding.liquid" />
   </ItemGroup>
   <ItemGroup>

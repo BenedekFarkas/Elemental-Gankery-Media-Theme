@@ -1,6 +1,5 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/reset";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/general";
-@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/pagination";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/misc";
 @import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/media";
 
@@ -9,6 +8,7 @@
 @import "variables";
 @import "mixins";
 @import "navigation";
+@import "pagination";
 @import "forms";
 @import "widgets";
 
@@ -21,25 +21,33 @@ body
 
     .metadata
     {
-        color: @wow-class-warrior;
+        color: @wow-quality-legendary;
     }
 
-    #header, #footer, .zone-navigation
+    #header, .zone-footer, .zone-navigation
     {
         background-color: @theme-dark;
     }
 
     .zone-navigation
     {
-        border-bottom: 1px solid @wow-expansion-legion;
+        border-bottom: 1px solid @wow-quality-wowtoken;
     }
 
-    #footer
+    .zone-footer
     {
-        border-top: 1px solid @wow-faction-horde;
+        border-top: 1px solid @wow-quality-wowtoken;
     }
 
     .link-style;
+
+    .zone-content
+    {
+        h1
+        {
+            border-bottom: none !important;
+        }
+    }
 }
 
 #branding
@@ -55,7 +63,7 @@ body
         {
             color: @wow-faction-horde !important;
             text-decoration: none;
-            text-shadow: 0px 0px 40px @wow-expansion-legion;
+            text-shadow: 0px 0px 40px @wow-quality-legendary;
         }
     }
 }

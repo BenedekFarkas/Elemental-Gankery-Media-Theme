@@ -3,34 +3,21 @@
 // Everything below should be inside #layout-wrapper too, but the the & Combinator would mess it up, see: https://github.com/less/less.js/issues/1500
 #layout-main-container
 {
-    .aside-1 &, .aside-2 &
+    .aside-12 &, .aside-1 &, .aside-2 &
     {
         #aside-first
         {
-            .make-column(2);
+            .make-column(@grid-columns / 6);
         }
 
         #layout-content
         {
-            .make-column(7);
+            .make-column(@grid-columns - @grid-columns / 3);
         }
 
         #aside-second
         {
-            .make-column(3);
-        }
-    }
-
-    .aside-12 &
-    {
-        #aside-first, #aside-second
-        {
-            .make-column(@grid-columns / 4);
-        }
-
-        #layout-content
-        {
-            .make-column(@grid-columns / 2);
+            .make-column(@grid-columns / 6);
         }
     }
 }

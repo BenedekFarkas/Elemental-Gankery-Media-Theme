@@ -1,0 +1,23 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/pagination";
+@import "variables";
+@import "mixins";
+
+.pager
+{
+    li
+    {
+        span, a
+        {
+            background-color: @theme-dark;
+            border: 2px solid @theme-lightgrey;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            &:hover, &:active
+            {
+                background-color: @theme-dark;
+                border: 2px solid @theme-grey;
+            }
+        }
+    }
+}
