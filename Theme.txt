@@ -1,6 +1,6 @@
 Name: World of Warcraft (Media Theme)
 Author: Benedek Farkas
 Website: http://elementalgankery.hu
-Description: Media Theme for Orchard CMS for World of Warcraft-related websites.
+Description: Media Theme for Orchard CMS for World of Warcraft-related websites with "Lombiq.PrettyGoodBootstrapBaseTheme" as the base theme.
 Version: 1.0
 BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
