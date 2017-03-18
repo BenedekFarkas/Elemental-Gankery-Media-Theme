@@ -3651,3 +3651,8 @@ ol {
 /* Breadcrumbs
    Some LESS variables that you can configure from your derived theme.
 ***************************************************************/
+.widget-MainSiteSearch {
+  float: right;
+  min-width: 250px;
+  padding: 10px;
+}
