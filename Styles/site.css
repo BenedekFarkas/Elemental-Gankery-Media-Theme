@@ -3881,8 +3881,9 @@ body #layout-main-container .zone-content h1 {
 }
 body .zone-footer {
   border-top: 1px solid #00CCFF;
-  border-bottom: 1px solid #00CCFF;
-  top: 117px;
+  position: fixed !important;
+  bottom: 0;
+  text-align: center;
 }
 body .zone-footer .user-display {
   display: none;
