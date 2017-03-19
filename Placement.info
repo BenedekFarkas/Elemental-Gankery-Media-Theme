@@ -7,6 +7,18 @@
         <Place Parts_Common_Metadata="-" />
     </Match>
 
+    <!-- BlogPost -->
+    <Match ContentType="BlogPost">
+        <Match DisplayType="Detail">
+            <Place Fields_MediaLibraryPicker="Content:6" />
+        </Match>
+    </Match>
+    
+    <!-- Image -->
+    <Match ContentType="Image">
+        <Place Parts_Common_Metadata_Summary="-" />
+    </Match>
+
     <!-- END Content Types -->
     
     <!-- Routes -->
