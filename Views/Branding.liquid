@@ -1,3 +1,7 @@
-﻿{% Style "../Styles/type.css" %}
+﻿{% if Model.WorkContext.CurrentSite.BaseUrl == "https://elementalgankery.hu" %}
+    {% Style "//dotneststatic.com/media/elementalgankery/MediaTheme/Styles/type.css" %}
+{% else %}
+    {% Style "../Styles/type.css" %}
+{% endif %}
 
 <h1 id="branding" class="font-eg"><a href="{{ Model.WorkContext.CurrentSite.BaseUrl }}">{{ Model.WorkContext.CurrentSite.SiteName }}</a></h1>
