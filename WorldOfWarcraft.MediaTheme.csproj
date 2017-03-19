@@ -80,6 +80,12 @@
     <Content Include="Styles\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
+    <Content Include="Styles\type.css">
+      <DependentUpon>type.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\type.min.css">
+      <DependentUpon>type.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
