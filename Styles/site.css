@@ -3774,16 +3774,21 @@ input[type="color"] {
 }
 .blogpost-summary-wrapper {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  background-color: #222427;
+  padding: 10px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
 }
 .blogpost-summary-wrapper .blogpost-summary-headerimage-container {
-  width: 50%;
+  width: 33%;
 }
 .blogpost-summary-wrapper .blogpost-summary-headerimage-container img {
   width: 100%;
 }
 .blogpost-summary-wrapper .blogpost-summary-main-container {
   float: right;
+  width: 100%;
   padding-left: 10px;
 }
 .blogpost-summary-wrapper .blogpost-summary-main-container h1 {

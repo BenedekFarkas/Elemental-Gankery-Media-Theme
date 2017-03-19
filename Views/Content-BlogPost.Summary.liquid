@@ -1,25 +1,25 @@
 ﻿<div class="blogpost-summary-wrapper">
     {% if Model.ContentItem.HeaderImagePart.HeaderImage.FirstMediaUrl != null %}
-    {% assign summaryContainerClass = "blogpost-summary-main-container" %}
-    <span class="blogpost-summary-headerimage-container">
-        <a href="{{ Model.WorkContext.CurrentSite.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
-            <img src="{{ Model.ContentItem.HeaderImagePart.HeaderImage.FirstMediaUrl }}" alt="{{ Model.ContentItem.TitlePart.Title }}" />
-        </a>
-    </span>
-  {% endif %}
-  
-  <span class="{{ summaryContainerClass }}">
-    <header>
-      {{ Model.Header | Display }}
-        <div class="metadata">
-          {{ Model.Meta | Display }}
+        {% assign summaryContainerClass = "blogpost-summary-main-container" %}
+        <span class="blogpost-summary-headerimage-container">
+            <a href="{{ Model.WorkContext.CurrentSite.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+                <img src="{{ Model.ContentItem.HeaderImagePart.HeaderImage.FirstMediaUrl }}" alt="{{ Model.ContentItem.TitlePart.Title }}" />
+            </a>
+        </span>
+    {% endif %}
+
+    <span class="{{ summaryContainerClass }}">
+        <header>
+            {{ Model.Header | Display }}
+            <div class="metadata">
+                {{ Model.Meta | Display }}
+            </div>
+        </header>
+        <div class="post-content">
+            {{ Model.Content | Display }}
         </div>
-    </header>
-    <div class="post-content">
-      {{ Model.Content | Display }}
-    </div>
-    <footer>
-      {{ Model.Footer | Display }}
-    </footer>
-  </span>
+        <footer>
+            {{ Model.Footer | Display }}
+        </footer>
+    </span>
 </div>
