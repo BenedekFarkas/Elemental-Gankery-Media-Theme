@@ -1,0 +1,5 @@
+﻿{% if Model.ContentField.Value == null %}
+	<p>Log link: -</p>
+{% else %}
+   <p><a href="{{ Model.ContentField.Value }}">Log link</a></p>
+{% endif %}

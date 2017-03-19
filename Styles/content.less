@@ -1,4 +1,6 @@
-﻿@import "variables";
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/common";
+
+@import "variables";
 
 .blogpost-summary-wrapper
 {
@@ -28,6 +30,20 @@
         h1
         {
             margin-top: 0;
+        }
+    }
+}
+
+article
+{
+    &.guild-application2
+    {
+        .content
+        {
+            .guild-application-section
+            {
+                .make-column(@grid-columns / 3);
+            }
         }
     }
 }

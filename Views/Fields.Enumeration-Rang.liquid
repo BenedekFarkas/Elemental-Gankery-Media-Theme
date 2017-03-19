@@ -1,0 +1,20 @@
+﻿{% case Model.ContentField.Value %}
+	{% when "Guild Master" %}
+	{% assign wrapperStart = "<strong><em>" %}
+	{% assign wrapperEnd = "</strong></em>" %}
+	
+	{% when "Officer" %}
+	{% assign wrapperStart = "<strong>" %}
+	{% assign wrapperEnd = "</strong>" %}
+	
+	{% when "Core Unit" %}
+	{% assign wrapperStart = "<em>" %}
+	{% assign wrapperEnd = "</em>" %}
+	
+	{% else %}
+	{% assign wrapperStart = "" %}
+	{% assign wrapperEnd = "" %}
+{% endcase %}
+
+
+({{ wrapperStart }}{{ Model.ContentField.Value }}{{ wrapperEnd }})

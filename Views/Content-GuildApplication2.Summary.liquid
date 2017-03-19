@@ -1,0 +1,20 @@
+﻿<article class="guild-application2 content-item">
+    <header>
+        {{ Model.Header | Display }}
+        <div class="metadata">
+            {{ Model.Meta | Display }}
+        </div>
+    </header>
+    <div class="content">
+        <ul>
+            {% if Model.ContentItem.GuildApplication2Part.MainKarakterArmoryLink.Value != null %}
+            <li>
+                <a href="{{ Model.ContentItem.GuildApplication2Part.MainKarakterArmoryLink.Value }}" target="_blank">Armory Link</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <footer>
+        {{ Model.Footer | Display }}
+    </footer>
+</article>

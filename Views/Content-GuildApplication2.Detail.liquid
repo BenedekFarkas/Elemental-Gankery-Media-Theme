@@ -1,0 +1,110 @@
+﻿<article class="guild-application2 content-item">
+    <header>
+        {{ Model.Header | Display }}
+        <div class="metadata">
+            {{ Model.Meta | Display }}
+        </div>
+    </header>
+    <div class="content">
+        <div class="guild-application-section">
+            <h2>Karaktereid</h2>
+            <ul>
+                {% if Model.ContentItem.GuildApplication2Part.MainKarakter.Value != null %}
+                <li>
+                    A Main karakteredről:
+                    <p>{{ Model.ContentItem.GuildApplication2Part.MainKarakter.Value }}</p>
+                </li>
+                {% endif %}
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication2Part.MainKarakterArmoryLink.Value }}" target="_blank">Armory Link</a>
+                </li>
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication2Part.NoncombatScreenshotURL.Value }}" target="_blank">Combat-on kívüli screenshot</a>
+                </li>
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication2Part.CombatScreenshotURL.Value }}" target="_blank">Combat screenshot</a>
+                </li>
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication2Part.CombatLogURL.Value }}" target="_blank">Combat log</a>
+                </li>
+                <li>
+                    Alt karakterek:
+                    <p>{{ Model.ContentItem.GuildApplication2Part.AltKarakterek.Value }}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="guild-application-section">
+            <h2>Raid tapasztalat és történet</h2>
+            <ul>
+                <li>
+                    Raid tapasztalat:
+                    <p>{{ Model.ContentItem.GuildApplication2Part.RaidTapasztalat.Value }}</p>
+                </li>
+                <li>
+                    Raid napok: <em>{{ Model.ContentItem.GuildApplication2Part.RaidNapok.Value }}</em>
+                </li>
+                <li>
+                    Hogyan értesítesz minket hiányzás esetén?
+                    <p>{{ Model.ContentItem.GuildApplication2Part.Hianyzas.Value }}</p>
+                </li>
+                <li>
+                    Hagytad már abba a játékot korábban?
+                    <p>{{ Model.ContentItem.GuildApplication2Part.Abbahagyas.Value }}</p>
+                </li>
+                <li>
+                    Emlékezetes pillanatok a WoW-ból:
+                    <p>{{ Model.ContentItem.GuildApplication2Part.EmlekezetesPillanat.Value }}</p>
+                </li>
+                <li>
+                    Referenciák a guild-ből: <em>{{ Model.ContentItem.GuildApplication2Part.Referencia.Value }}</em>
+                </li>
+            </ul>
+        </div>
+        <div class="guild-application-section">
+            <h2>Elérhetőség</h2>
+            <ul>
+                <li>
+                    Hang kommunikáció megy? <em>{{ Model.ContentItem.GuildApplication2Part.Kommunikacio.Value }}</em>
+                </li>
+                <li>
+                    Elérhetősége(i)d: <em>{{ Model.ContentItem.GuildApplication2Part.Elerhetoseg.Value }}</em>
+                </li>
+            </ul>
+        </div>
+        <div class="guild-application-section">
+            <h2>Egyéb</h2>
+            <ul>
+                <li>
+                    Internetkapcsolatod: <em>{{ Model.ContentItem.GuildApplication2Part.Internetkapcsolat.Value }}</em>
+                </li>
+                <li>
+                    FPS-ed raid közben: <em>{{ Model.ContentItem.GuildApplication2Part.RaidFPS.Value }}</em>
+                </li>
+                <li>
+                    Bossfight-okat fel tudsz venni? <em>{{ Model.ContentItem.GuildApplication2Part.BossfightFelvetel.Value }}</em>
+                </li>
+                <li>
+                    Ismered a SimCraft-ot? <em>{{ Model.ContentItem.GuildApplication2Part.SimCraftIsmeret.Value }}</em>
+                </li>
+                <li>
+                    Ha igen, használod? <em>{{ Model.ContentItem.GuildApplication2Part.SimCraftHasznalat.Value }}</em>
+                </li>
+                <li>
+                    Hogyan készülsz fel egy progress raid-re?
+                    <p>{{ Model.ContentItem.GuildApplication2Part.Felkeszules.Value }}</p>
+                </li>
+                <li>
+                    Elvárásaid és amit teljesíteni tudsz:
+                    <p>{{ Model.ContentItem.GuildApplication2Part.Elvarasok.Value }}</p>
+                </li>
+                <li>
+                    Egyéb:
+                    <p>{{ Model.ContentItem.GuildApplication2Part.Egyeb.Value }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        {{ Model.Footer | Display }}
+    </footer>
+</article>

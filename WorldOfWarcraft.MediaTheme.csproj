@@ -95,6 +95,17 @@
     <Content Include="Placement.info" />
     <Content Include="Views\Content-BlogPost.Summary.liquid" />
     <Content Include="Views\Fields.MediaLibraryPicker-HeaderImagePart-HeaderImage.liquid" />
+    <Content Include="Views\Fields.Input-YouTubePlayListId.liquid" />
+    <Content Include="Views\Fields.Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol.liquid" />
+    <Content Include="Views\Fields.Common.Text-YouTubeVideoId.liquid" />
+    <Content Include="Views\Fields.Common.Text-GuildApplication-MainKarakter.liquid" />
+    <Content Include="Views\Fields.Enumeration-Rang.liquid" />
+    <Content Include="Views\Fields.Input-IncombatUIscreenshot.liquid" />
+    <Content Include="Views\Fields.Input-Armorylink.liquid" />
+    <Content Include="Views\Parts.GuildApplication2Part.Detail.liquid" />
+    <None Include="Views\Content-GuildApplication.Summary.liquid" />
+    <Content Include="Views\Content-GuildApplication2.Detail.liquid" />
+    <None Include="Views\Content-GuildApplication2.Summary.liquid" />
     <None Include="Views\Parts.Comments.Count.liquid" />
   </ItemGroup>
   <ItemGroup>

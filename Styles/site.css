@@ -266,9 +266,6 @@ th {
 /* Breadcrumbs
    Imports styles needed for removing browser inconsistencies.
 ***************************************************************/
-/* Common
-   Common imports needed in every PGBBT LESS file.
-***************************************************************/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2274,6 +2271,12 @@ fieldset ol li,
 /* General
    Imports some styles generally needed from Bootstrap and from PGBBT.
 ***************************************************************/
+/* Breadcrumbs
+   Some LESS variables that you can configure from your derived theme.
+***************************************************************/
+/* Common
+   Common imports needed in every PGBBT LESS file.
+***************************************************************/
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -3012,9 +3015,6 @@ body {
 .zone-content {
   padding-top: 0;
 }
-/* Breadcrumbs
-   Some LESS variables that you can configure from your derived theme.
-***************************************************************/
 .link-style a {
   color: #0C81CE;
 }
@@ -3796,7 +3796,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   background-color: #2B2D31;
-  border-color: #37393D;
+  border-color: 1px solid #37393D;
+  color: #9D9D9D;
+}
+legend {
   color: #9D9D9D;
 }
 .blogpost-summary-wrapper {
@@ -3820,6 +3823,19 @@ input[type="color"] {
 }
 .blogpost-summary-wrapper .blogpost-summary-main-container h1 {
   margin-top: 0;
+}
+article.guild-application2 .content .guild-application-section {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 48em) {
+  article.guild-application2 .content .guild-application-section {
+    width: 33.33333333%;
+  }
 }
 .widget-MainSiteSearch {
   float: right;

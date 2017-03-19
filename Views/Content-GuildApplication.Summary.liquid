@@ -1,0 +1,22 @@
+﻿<article class="guild-application content-item">
+    <header>
+        {{ Model.Header | Display }}
+        <div class="metadata">
+            {{ Model.Meta | Display }}
+        </div>
+    </header>
+    <div class="content">
+        <ul>
+            <li>Race és class: {{ Model.ContentItem.GuildApplication.FajKaszt.Value }}</li>
+            <li>Main- és raid-képes offspec: {{ Model.ContentItem.GuildApplication.Mainesraidkepesoffspec.Value }}</li>
+            {% if Model.ContentItem.GuildApplication.Armorylink.Value != null %}
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication.Armorylink.Value }}" target="_blank">Armory Link</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+    <footer>
+        {{ Model.Footer | Display }}
+    </footer>
+</article>

@@ -19,47 +19,21 @@
         <Place Parts_Common_Metadata_Summary="-" />
     </Match>
 
+    <!-- Form -->
+    <Match ContentType="Form">
+        <Place Parts_Common_Metadata="-" />
+    </Match>
+
     <!-- Guild Application -->
     <Match ContentType="GuildApplication">
-        <Match DisplayType="Summary">
-            <Place
-                Fields_Common_Text-FajKaszt="Content:1.0"
-        
-                Fields_Boolean="-"
-                Fields_Enumeration="-"
-            
-                Fields_Common_Text-FreeText="-"
-                Fields_Common_Text-ElozoGuildek="-"
-                Fields_Common_Text-ReszletesRaidtapasztalatKezdetekkezdetetolnapjainkig="-"
-                Fields_Common_Text-Bejelentkezettraidrenemjelenszmegidobenmitteszel="-"
-                Fields_Common_Text-evjatekutansokannehezenviselikmegakonstruktivkritikatismitgondolszmagadrolebbenatekintetben="-"
-                Fields_Common_Text-Referenciakaguildbol="-"
-                Fields_Common_Text-Miceljaidvannakmegawowban="-"
-                Fields_Common_Text-Barmilyenwowoselmenypvepvpoutworldamireaztmondodhogyigazanbuszkevagyra="-"
-            
-                Fields_Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol="-"
-                Fields_Input-IncombatUIscreenshot="-"
-        />
-        </Match>
         <Match DisplayType="SummaryAdmin">
             <Place
-                Fields_Common_Text-FajKaszt="Content:1.0"
-
+                Fields_Common_Text="-"
                 Fields_Boolean="-"
                 Fields_Enumeration="-"
-
-                Fields_Common_Text-FreeText="-"
-                Fields_Common_Text-ElozoGuildek="-"
-                Fields_Common_Text-ReszletesRaidtapasztalatKezdetekkezdetetolnapjainkig="-"
-                Fields_Common_Text-Bejelentkezettraidrenemjelenszmegidobenmitteszel="-"
-                Fields_Common_Text-evjatekutansokannehezenviselikmegakonstruktivkritikatismitgondolszmagadrolebbenatekintetben="-"
-                Fields_Common_Text-Referenciakaguildbol="-"
-                Fields_Common_Text-Miceljaidvannakmegawowban="-"
-                Fields_Common_Text-Barmilyenwowoselmenypvepvpoutworldamireaztmondodhogyigazanbuszkevagyra="-"
-            
-                Fields_Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol="-"
-                Fields_Input-IncombatUIscreenshot="-"
-        />
+                Fields_Input="-"
+                Fields_Link="-"
+            />
         </Match>
         <Match DisplayType="Detail">
             <Place
@@ -79,7 +53,26 @@
                 Fields_Boolean-Haigenhasznalodeakarakteredmaximalizalasara="Content:1.13"
                 Fields_Enumeration-Raidek="Content:1.14"
                 Fields_Common_Text-FreeText="Content:1.15"
-        />
+            />
+        </Match>
+    </Match>
+
+    <!-- Guild Application -->
+    <Match ContentType="GuildApplication2">
+        <Match DisplayType="SummaryAdmin">
+            <Place
+                Fields_Common_Text="-"
+                Fields_Boolean="-"
+                Fields_Enumeration="-"
+                Fields_InputField="-"
+                Fields_Link="-"
+            />
+        </Match>
+        <Match DisplayType="Detail">
+            <Place
+                Parts_ListOfComments="Footer:1"    
+                Parts_CommentForm="Footer:2"
+            />
         </Match>
     </Match>
 
@@ -133,7 +126,7 @@
     </Match>
 
     <!-- /apply* -->
-    <Match Path="/apply*">
+    <Match Path="apply*">
         <Place
             Parts_Autoroute_Edit="-"
             Parts_Comments_Enable="-"
