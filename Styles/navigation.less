@@ -4,16 +4,31 @@
 
 .zone-navigation
 {
+    padding: 0;
+
     .widget-menu-widget
     {
         font-weight: bold;
         font-size: 2rem;
+        float: left;
 
         .menu
         {
             :hover, :active, :focus
             {
-                background-color: @theme-dark;
+                background-color: @theme-grey;
+            }
+
+            li
+            {
+                width: auto;
+                min-width: 150px;
+                border-right: 1px solid @wow-quality-wowtoken;
+
+                &.last
+                {
+                    border-right: none;
+                }
             }
 
             .dropdown ul
@@ -21,12 +36,13 @@
                 min-width: 100%;
                 background-color: @theme-dark;
                 border-color: @theme-lightgrey;
+                padding: 0;
 
                 li
                 {
                     min-height: 40px;
                     vertical-align: middle;
-
+                    border-right: none;
                     .link-style;
 
                     a
