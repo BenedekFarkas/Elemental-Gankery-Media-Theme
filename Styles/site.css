@@ -3748,7 +3748,9 @@ body {
 .pager li span:hover,
 .pager li a:hover,
 .pager li span:active,
-.pager li a:active {
+.pager li a:active,
+.pager li span:focus,
+.pager li a:focus {
   background-color: #222427;
   border: 2px solid #2B2D31;
 }
