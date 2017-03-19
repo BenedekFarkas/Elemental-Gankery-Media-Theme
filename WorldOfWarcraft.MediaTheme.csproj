@@ -92,10 +92,12 @@
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
-    <Content Include="Placement.info" />
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Content-BlogPost.Summary.liquid" />
     <Content Include="Views\Fields.MediaLibraryPicker-HeaderImagePart-HeaderImage.liquid" />
-    <Content Include="Views\Fields.Input-YouTubePlayListId.liquid" />
+    <Content Include="Views\Fields.Input-YouTubePlaylistId.liquid" />
     <Content Include="Views\Fields.Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol.liquid" />
     <Content Include="Views\Fields.Common.Text-YouTubeVideoId.liquid" />
     <Content Include="Views\Fields.Common.Text-GuildApplication-MainKarakter.liquid" />
