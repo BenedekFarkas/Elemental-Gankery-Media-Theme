@@ -95,6 +95,7 @@
     <Content Include="Placement.info" />
     <Content Include="Views\Content-BlogPost.Summary.liquid" />
     <Content Include="Views\Fields.MediaLibraryPicker-HeaderImagePart-HeaderImage.liquid" />
+    <None Include="Views\Parts.Comments.Count.liquid" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">

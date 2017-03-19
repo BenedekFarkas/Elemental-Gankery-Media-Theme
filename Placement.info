@@ -1,5 +1,5 @@
 <Placement>
-
+    
     <!-- Content Types -->
 
     <!-- Blog -->
@@ -120,6 +120,8 @@
 
     <!-- END Content Types -->
 
+    
+    
     <!-- Routes -->
 
     <!-- /Profile/Edit -->
