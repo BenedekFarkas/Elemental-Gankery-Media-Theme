@@ -89,7 +89,6 @@
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
-    <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info" />
@@ -116,10 +115,8 @@
     </None>
     <Content Include="Images\Web.config" />
     <Content Include="Styles\structure.less" />
-    <Content Include="Content\fonts\egfont.ttf" />
     <Content Include="Styles\type.less" />
     <Content Include="Styles\navigation.less" />
-    <Content Include="Content\fonts\OpenSans-Regular.woff" />
     <Content Include="Styles\pagination.less" />
     <None Include="Views\Branding.liquid" />
   </ItemGroup>
