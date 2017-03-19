@@ -1,4 +1,4 @@
-﻿{% if Model.ContentField.FirstMediaUrl != "" %}
+﻿{% if Model.ContentField.FirstMediaUrl != null %}
   <div class="header-image {{ Model.ContentItem.ContentType }}-header-image">
       <img src="{{ Model.ContentField.FirstMediaUrl }}" alt="{{ Model.ContentItem.TitlePart.Title }}" />
   </div>

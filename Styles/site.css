@@ -3777,7 +3777,7 @@ input[type="color"] {
   margin-bottom: 2rem;
 }
 .blogpost-summary-wrapper .blogpost-summary-headerimage-container {
-  width: 25%;
+  width: 50%;
 }
 .blogpost-summary-wrapper .blogpost-summary-headerimage-container img {
   width: 100%;
@@ -3785,7 +3785,6 @@ input[type="color"] {
 .blogpost-summary-wrapper .blogpost-summary-main-container {
   float: right;
   padding-left: 10px;
-  width: 75%;
 }
 .blogpost-summary-wrapper .blogpost-summary-main-container h1 {
   margin-top: 0;
