@@ -3795,6 +3795,9 @@ body .zone-footer {
   border-top: 1px solid #00CCFF;
   border-bottom: 1px solid #00CCFF;
 }
+body .zone-footer .user-display {
+  display: none;
+}
 body a {
   color: #0C81CE;
 }
