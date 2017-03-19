@@ -1,7 +1,7 @@
 <Placement>
-    
+
     <!-- Content Types -->
-    
+
     <!-- Blog -->
     <Match ContentType="Blog">
         <Place Parts_Common_Metadata="-" />
@@ -13,14 +13,113 @@
             <Place Fields_MediaLibraryPicker="Content:6" />
         </Match>
     </Match>
-    
+
     <!-- Image -->
     <Match ContentType="Image">
         <Place Parts_Common_Metadata_Summary="-" />
     </Match>
 
+    <!-- Guild Application -->
+    <Match ContentType="GuildApplication">
+        <Match DisplayType="Summary">
+            <Place
+                Fields_Common_Text-FajKaszt="Content:1.0"
+        
+                Fields_Boolean="-"
+                Fields_Enumeration="-"
+            
+                Fields_Common_Text-FreeText="-"
+                Fields_Common_Text-ElozoGuildek="-"
+                Fields_Common_Text-ReszletesRaidtapasztalatKezdetekkezdetetolnapjainkig="-"
+                Fields_Common_Text-Bejelentkezettraidrenemjelenszmegidobenmitteszel="-"
+                Fields_Common_Text-evjatekutansokannehezenviselikmegakonstruktivkritikatismitgondolszmagadrolebbenatekintetben="-"
+                Fields_Common_Text-Referenciakaguildbol="-"
+                Fields_Common_Text-Miceljaidvannakmegawowban="-"
+                Fields_Common_Text-Barmilyenwowoselmenypvepvpoutworldamireaztmondodhogyigazanbuszkevagyra="-"
+            
+                Fields_Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol="-"
+                Fields_Input-IncombatUIscreenshot="-"
+        />
+        </Match>
+        <Match DisplayType="SummaryAdmin">
+            <Place
+                Fields_Common_Text-FajKaszt="Content:1.0"
+
+                Fields_Boolean="-"
+                Fields_Enumeration="-"
+
+                Fields_Common_Text-FreeText="-"
+                Fields_Common_Text-ElozoGuildek="-"
+                Fields_Common_Text-ReszletesRaidtapasztalatKezdetekkezdetetolnapjainkig="-"
+                Fields_Common_Text-Bejelentkezettraidrenemjelenszmegidobenmitteszel="-"
+                Fields_Common_Text-evjatekutansokannehezenviselikmegakonstruktivkritikatismitgondolszmagadrolebbenatekintetben="-"
+                Fields_Common_Text-Referenciakaguildbol="-"
+                Fields_Common_Text-Miceljaidvannakmegawowban="-"
+                Fields_Common_Text-Barmilyenwowoselmenypvepvpoutworldamireaztmondodhogyigazanbuszkevagyra="-"
+            
+                Fields_Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol="-"
+                Fields_Input-IncombatUIscreenshot="-"
+        />
+        </Match>
+        <Match DisplayType="Detail">
+            <Place
+                Fields_Common_Text-FajKaszt="Content:1.0"
+                Fields_Input-Armorylink="Content:1.1"
+                Fields_Common_Text-ElozoGuildek="Content:1.2"
+                Fields_Common_Text-ReszletesRaidtapasztalatKezdetekkezdetetolnapjainkig="Content:1.3"
+                Fields_Input-WolWarcraftlogsMrRobotlinkalegutobbiraidjeidrol="Content:1.4"
+                Fields_Input-IncombatUIscreenshot="Content:1.5"
+                Fields_Common_Text-Referenciakaguildbol="Content:1.6"
+                Fields_Common_Text-Bejelentkezettraidrenemjelenszmegidobenmitteszel="Content:1.7"
+                Fields_Common_Text-evjatekutansokannehezenviselikmegakonstruktivkritikatismitgondolszmagadrolebbenatekintetben="Content:1.8"
+                Fields_Common_Text-Miceljaidvannakmegawowban="Content:1.9"
+                Fields_Common_Text-Barmilyenwowoselmenypvepvpoutworldamireaztmondodhogyigazanbuszkevagyra="Content:1.10"
+                Fields_Boolean-KepesvagyTSenaketoldalukommunikaciora="Content:1.11"
+                Fields_Boolean-IsmeredeaSimCraftnevuprogramot="Content:1.12"
+                Fields_Boolean-Haigenhasznalodeakarakteredmaximalizalasara="Content:1.13"
+                Fields_Enumeration-Raidek="Content:1.14"
+                Fields_Common_Text-FreeText="Content:1.15"
+        />
+        </Match>
+    </Match>
+
+    <!-- Forum -->
+    <Match ContentType="Forum">
+        <Place
+            Fields_TaxonomyField-ForumCategoryTaxonomy="-"
+            Parts_Common_Metadata_Summary="-"
+        />
+    </Match>
+
+    <!-- YouTubeVideo -->
+    <Match ContentType="YouTubeVideo">
+        <Match DisplayType="Summary">
+            <Place
+                Parts_Common_Body="Content:1.0"
+                Parts_Common_Body_Summary="-"
+                Fields_TaxonomyField-VideoCategoryTaxonomy="-"
+                Fields_Common_Text-YouTubeVideoId="Content:2.1"
+                Fields_Input-YouTubePlaylistId="Content:2.2"
+            />
+        </Match>
+        <Match DisplayType="SummaryAdmin">
+            <Place
+                Fields_Input-YouTubeVideoId="-"
+                Fields_Input-YouTubePlaylistId="-"
+            />
+        </Match>
+        <Match DisplayType="Detail">
+            <Place
+                Parts_Common_Body="Content:1.0"
+                Fields_TaxonomyField-VideoCategoryTaxonomy="-"
+                Fields_Common_Text-YouTubeVideoId="Content:2.1"
+                Fields_Input-YouTubePlaylistId="Content:2.2"
+            />
+        </Match>
+    </Match>
+
     <!-- END Content Types -->
-    
+
     <!-- Routes -->
 
     <!-- /Profile/Edit -->
@@ -28,10 +127,26 @@
         <Place
             Fields_Enumeration_Edit-Rang="-"
             Fields_Boolean_Edit-DisplayInRoster="-"
-            Parts_Roles_UserRoles_Edit="-"
+
         />
     </Match>
-    
+
+    <!-- /apply* -->
+    <Match Path="/apply*">
+        <Place
+            Parts_Autoroute_Edit="-"
+            Parts_Comments_Enable="-"
+            Parts_ContentPermissions_Edit="-"
+        />
+    </Match>
+
+    <!-- /Forums/Thread/Create -->
+    <Match Path="/Forums/Thread/Create*">
+        <Place
+            Parts_Autoroute_Edit="-"
+        />
+    </Match>
+
     <!-- END Routes -->
     
 </Placement>
