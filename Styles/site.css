@@ -3875,6 +3875,7 @@ body #layout-main-container #aside-first,
 body #layout-main-container #layout-content,
 body #layout-main-container #aside-second {
   top: 117px;
+  margin-bottom: 20px;
 }
 body #layout-main-container .zone-content h1 {
   border-bottom: none !important;
