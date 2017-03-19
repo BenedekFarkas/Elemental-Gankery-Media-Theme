@@ -3018,7 +3018,7 @@ body {
 .link-style a {
   color: #0C81CE;
 }
-.link-style a.active,
+.link-style a:active,
 .link-style a:hover {
   text-decoration: none;
   color: #E6CC80 !important;
@@ -3503,7 +3503,8 @@ body {
   font-size: 2rem;
 }
 .zone-navigation .widget-menu-widget .menu :hover,
-.zone-navigation .widget-menu-widget .menu :active {
+.zone-navigation .widget-menu-widget .menu :active,
+.zone-navigation .widget-menu-widget .menu :focus {
   background-color: #222427;
 }
 .zone-navigation .widget-menu-widget .menu .dropdown ul {
@@ -3518,7 +3519,7 @@ body {
 .zone-navigation .widget-menu-widget .menu .dropdown ul li a {
   color: #0C81CE;
 }
-.zone-navigation .widget-menu-widget .menu .dropdown ul li a.active,
+.zone-navigation .widget-menu-widget .menu .dropdown ul li a:active,
 .zone-navigation .widget-menu-widget .menu .dropdown ul li a:hover {
   text-decoration: none;
   color: #E6CC80 !important;
@@ -3532,7 +3533,7 @@ body {
 .zone-navigation .widget-menu-widget .menu a {
   color: #0C81CE;
 }
-.zone-navigation .widget-menu-widget .menu a.active,
+.zone-navigation .widget-menu-widget .menu a:active,
 .zone-navigation .widget-menu-widget .menu a:hover {
   text-decoration: none;
   color: #E6CC80 !important;
@@ -3797,7 +3798,7 @@ body .zone-footer {
 body a {
   color: #0C81CE;
 }
-body a.active,
+body a:active,
 body a:hover {
   text-decoration: none;
   color: #E6CC80 !important;
@@ -3811,7 +3812,8 @@ body .zone-content h1 {
   transition: text-shadow 1s;
   -webkit-transition: text-shadow 0.66s;
 }
-#branding a:hover {
+#branding a:hover,
+#branding a:focus {
   color: #CD2B00 !important;
   text-decoration: none;
   text-shadow: 0px 0px 40px #FF8000;
