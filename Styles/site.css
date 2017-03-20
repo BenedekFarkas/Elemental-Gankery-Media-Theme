@@ -3877,16 +3877,16 @@ body #layout-header .zone-header #branding {
   text-align: center;
 }
 body #layout-header .zone-header #branding a {
-  color: #CD2B00;
+  color: #FFFFFF;
   box-shadow: none;
   transition: text-shadow 1s;
   -webkit-transition: text-shadow 0.66s;
 }
 body #layout-header .zone-header #branding a:hover,
 body #layout-header .zone-header #branding a:focus {
-  color: #CD2B00 !important;
+  color: #FFFFFF !important;
   text-decoration: none;
-  text-shadow: 0px 0px 40px #FF8000;
+  text-shadow: 0px 0px 40px #FFFFFF;
 }
 body #layout-navigation {
   position: fixed;
