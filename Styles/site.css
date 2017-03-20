@@ -3829,6 +3829,7 @@ article.guild-application2.summary {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 48%;
+  height: 200px;
   margin: 0 1% 2rem 1%;
   background-color: #222427;
   padding: 15px;
@@ -3848,6 +3849,9 @@ article.guild-application2.summary:nth-of-type(even) {
 article.guild-application.summary h1,
 article.guild-application2.summary h1 {
   margin-top: 0;
+}
+article.guild-application2.summary {
+  height: 140px;
 }
 article.guild-application2.detail .content {
   margin-left: -15px;
