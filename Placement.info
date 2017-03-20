@@ -68,10 +68,16 @@
                 Fields_Link="-"
             />
         </Match>
+        <Match DisplayType="Summary">
+            <Place
+                Fields_TaxonomyField-Status="Meta:after"
+            />
+        </Match>
         <Match DisplayType="Detail">
             <Place
                 Parts_ListOfComments="Footer:1"    
                 Parts_CommentForm="Footer:2"
+                Fields_TaxonomyField-Status="Meta:after"
             />
         </Match>
     </Match>
