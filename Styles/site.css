@@ -508,7 +508,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .lead {
     font-size: 21px;
   }
@@ -994,7 +994,7 @@ table th[class*="col-"] {
   overflow-x: auto;
   min-height: 0.01%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 46.95em) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1472,7 +1472,7 @@ select[multiple].form-group-lg .form-control {
   margin-bottom: 10px;
   color: #737373;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -1538,7 +1538,7 @@ select[multiple].form-group-lg .form-control {
   margin-left: -15px;
   margin-right: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
@@ -1548,12 +1548,12 @@ select[multiple].form-group-lg .form-control {
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 14.333333px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
   }
@@ -3108,7 +3108,7 @@ body {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3126,7 +3126,7 @@ body {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -3176,7 +3176,7 @@ body {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3197,7 +3197,7 @@ body {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 47.95em) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -3490,7 +3490,7 @@ body {
     width: 1%;
   }
 }
-@media (min-width: 48em) and (min-width: 768px) {
+@media (min-width: 48em) and (min-width: 47.95em) {
   .widget-menu-widget .menu > li {
     display: table-cell;
     width: 1%;
@@ -3849,15 +3849,66 @@ article.guild-application.summary h1,
 article.guild-application2.summary h1 {
   margin-top: 0;
 }
-article.guild-application2.detail .content .guild-application-section {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+article.guild-application2.detail .content {
+  margin-left: -15px;
+  margin-right: -15px;
 }
-@media (min-width: 48em) {
+article.guild-application2.detail .content .guild-application-section {
+  background-color: #222427;
+  padding: 15px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 57.8em) {
+  article.guild-application2.detail .content .guild-application-section {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 98%;
+    margin: 0 1% 2rem 1%;
+  }
+}
+@media only screen and (max-width: 57.8em) and (min-width: 48em) {
+  article.guild-application2.detail .content .guild-application-section {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 57.8em), only screen and (min-width: 87.4em) {
+  article.guild-application2.detail .content .guild-application-section {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 48%;
+    margin: 0 1% 2rem 1%;
+  }
+}
+@media only screen and (min-width: 57.8em) and (min-width: 48em), only screen and (min-width: 87.4em) and (min-width: 48em) {
+  article.guild-application2.detail .content .guild-application-section {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 99.9em) {
+  article.guild-application2.detail .content .guild-application-section {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 32%;
+    margin: 0 1% 2rem 0;
+  }
+  article.guild-application2.detail .content .guild-application-section:nth-of-type(1) {
+    margin-left: 1%;
+  }
+}
+@media only screen and (min-width: 99.9em) and (min-width: 48em) {
   article.guild-application2.detail .content .guild-application-section {
     width: 33.33333333%;
   }
