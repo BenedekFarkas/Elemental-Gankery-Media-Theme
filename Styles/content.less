@@ -36,13 +36,40 @@
 
 article
 {
+    &.guild-application, &.guild-application2
+    {
+        &.summary
+        {
+            .make-column(@grid-columns / 2);
+            max-width: 48%;
+            margin: 0 1% 2rem 1%;
+            background-color: @theme-dark;
+            padding: 15px;
+            border: 2px solid @theme-lightgrey;
+            border-radius: 5px;
+
+            &:nth-of-type(even)
+            {
+                float: right;
+            }
+
+            h1
+            {
+                margin-top: 0;
+            }
+        }
+    }
+
     &.guild-application2
     {
-        .content
+        &.detail
         {
-            .guild-application-section
+            .content
             {
-                .make-column(@grid-columns / 3);
+                .guild-application-section
+                {
+                    .make-column(@grid-columns / 3);
+                }
             }
         }
     }
