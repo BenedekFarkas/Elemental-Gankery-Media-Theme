@@ -3510,7 +3510,7 @@ body {
 .zone-navigation .widget-menu-widget .menu :hover,
 .zone-navigation .widget-menu-widget .menu :active,
 .zone-navigation .widget-menu-widget .menu :focus {
-  background-color: #2B2D31;
+  background-color: #222427;
 }
 .zone-navigation .widget-menu-widget .menu li {
   width: auto;
@@ -3522,7 +3522,7 @@ body {
 .zone-navigation .widget-menu-widget .menu li.current :hover,
 .zone-navigation .widget-menu-widget .menu li.current :active,
 .zone-navigation .widget-menu-widget .menu li.current :focus {
-  background-color: #2B2D31;
+  background-color: #222427;
 }
 .zone-navigation .widget-menu-widget .menu .dropdown ul {
   min-width: 100%;
