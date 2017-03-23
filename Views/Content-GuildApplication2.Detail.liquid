@@ -29,9 +29,7 @@
             <h2>Raid tapasztalat és történet</h2>
             <ul>
                 <li>{{ Model.RaidTapasztalat | Display }}</li>
-                <li>
-                    Raid napok: <em>{{ Model.ContentItem.GuildApplication2Part.RaidNapok.Value }}</em>
-                </li>
+                <li>{{ Model.RaidNapok | Display }}</li>
                 <li>{{ Model.Hianyzas | Display }}</li>
                 <li>{{ Model.Abbahagyas | Display }}</li>
                 <li>{{ Model.EmlekezetesPillanat | Display }}</li>

@@ -88,6 +88,8 @@
                 Fields_Common_Text-Felkeszules="Felkeszules:1"
                 Fields_Common_Text-Elvarasok="Elvarasok:1"
                 Fields_Common_Text-Egyeb="Egyeb:1"
+                
+                Fields_Enumeration-RaidNapok="RaidNapok:1"
             />
         </Match>
     </Match>
