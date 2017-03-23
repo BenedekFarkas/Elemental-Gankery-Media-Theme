@@ -3854,7 +3854,7 @@ article.guild-application2 .meta-status {
   font-size: 1.4rem;
 }
 article.guild-application2.summary {
-  height: 140px;
+  min-height: 120px;
 }
 article.guild-application2.detail .content {
   margin-left: -15px;
@@ -3865,60 +3865,7 @@ article.guild-application2.detail .content .guild-application-section {
   padding: 15px;
   border: 2px solid #37393D;
   border-radius: 5px;
-}
-@media only screen and (max-width: 57.8em) {
-  article.guild-application2.detail .content .guild-application-section {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 98%;
-    margin: 0 1% 2rem 1%;
-  }
-}
-@media only screen and (max-width: 57.8em) and (min-width: 48em) {
-  article.guild-application2.detail .content .guild-application-section {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 57.8em), only screen and (min-width: 87.4em) {
-  article.guild-application2.detail .content .guild-application-section {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 48%;
-    margin: 0 1% 2rem 1%;
-  }
-}
-@media only screen and (min-width: 57.8em) and (min-width: 48em), only screen and (min-width: 87.4em) and (min-width: 48em) {
-  article.guild-application2.detail .content .guild-application-section {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 99.9em) {
-  article.guild-application2.detail .content .guild-application-section {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 32%;
-    margin: 0 1% 2rem 0;
-  }
-  article.guild-application2.detail .content .guild-application-section:nth-of-type(1) {
-    margin-left: 1%;
-  }
-}
-@media only screen and (min-width: 99.9em) and (min-width: 48em) {
-  article.guild-application2.detail .content .guild-application-section {
-    width: 33.33333333%;
-  }
+  margin-bottom: 10px;
 }
 .widget-MainSiteSearch {
   float: right;
