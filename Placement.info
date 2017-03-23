@@ -78,6 +78,16 @@
                 Parts_ListOfComments="Footer:1"    
                 Parts_CommentForm="Footer:2"
                 Fields_TaxonomyField-Status="Meta:after"
+                
+                Fields_Common_Text-MainKarakter="MainKarakter:1"
+                Fields_Common_Text-AltKarakterek="AltKarakterek:1"
+                Fields_Common_Text-RaidTapasztalat="RaidTapasztalat:1"
+                Fields_Common_Text-Hianyzas="Hianyzas:1"
+                Fields_Common_Text-Abbahagyas="Abbahagyas:1"
+                Fields_Common_Text-EmlekezetesPillanat="EmlekezetesPillanat:1"
+                Fields_Common_Text-Felkeszules="Felkeszules:1"
+                Fields_Common_Text-Elvarasok="Elvarasok:1"
+                Fields_Common_Text-Egyeb="Egyeb:1"
             />
         </Match>
     </Match>
