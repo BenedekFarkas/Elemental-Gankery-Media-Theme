@@ -3867,8 +3867,9 @@ article.guild-application2.detail .content .guild-application-section {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-article.guild-application2.detail .content .guild-application-section p.text-field .name {
+article.guild-application2.detail .content .guild-application-section p .name {
   display: block;
+  font-weight: bold;
 }
 .widget-MainSiteSearch {
   float: right;

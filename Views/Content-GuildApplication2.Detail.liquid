@@ -34,7 +34,10 @@
                 <li>{{ Model.Abbahagyas | Display }}</li>
                 <li>{{ Model.EmlekezetesPillanat | Display }}</li>
                 <li>
-                    Referenciák a guild-ből: <em>{{ Model.ContentItem.GuildApplication2Part.Referencia.Value }}</em>
+                    <p>
+                        <span class="name">Referenciák a guild-ből:</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.Referencia.Value }}</em>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -42,10 +45,16 @@
             <h2>Elérhetőség</h2>
             <ul>
                 <li>
-                    Hang kommunikáció megy? <em>{{ Model.ContentItem.GuildApplication2Part.Kommunikacio.Value }}</em>
+                    <p>
+                        <span class="name">Hang kommunikáció megy?</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.Kommunikacio.Value }}</em>
+                    </p>
                 </li>
                 <li>
-                    Elérhetősége(i)d: <em>{{ Model.ContentItem.GuildApplication2Part.Elerhetoseg.Value }}</em>
+                    <p>
+                        <span class="name">Elérhetősége(i)d:</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.Elerhetoseg.Value }}</em>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -53,19 +62,34 @@
             <h2>Egyéb</h2>
             <ul>
                 <li>
-                    Internetkapcsolatod: <em>{{ Model.ContentItem.GuildApplication2Part.Internetkapcsolat.Value }}</em>
+                    <p>
+                        <span class="name">Internetkapcsolatod:</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.Internetkapcsolat.Value }}</em>
+                    </p>
                 </li>
                 <li>
-                    FPS-ed raid közben: <em>{{ Model.ContentItem.GuildApplication2Part.RaidFPS.Value }}</em>
+                    <p>
+                        <span class="name">FPS-ed raid közben:</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.RaidFPS.Value }}</em>
+                    </p>
                 </li>
                 <li>
-                    Bossfight-okat fel tudsz venni? <em>{{ Model.ContentItem.GuildApplication2Part.BossfightFelvetel.Value }}</em>
+                    <p>
+                        <span class="name">Bossfight-okat fel tudsz venni?</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.BossfightFelvetel.Value }}</em>
+                    </p>
                 </li>
                 <li>
-                    Ismered a SimCraft-ot? <em>{{ Model.ContentItem.GuildApplication2Part.SimCraftIsmeret.Value }}</em>
+                    <p>
+                        <span class="name">Ismered a SimCraft-ot?</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.SimCraftIsmeret.Value }}</em>
+                    </p>
                 </li>
                 <li>
-                    Ha igen, használod? <em>{{ Model.ContentItem.GuildApplication2Part.SimCraftHasznalat.Value }}</em>
+                    <p>
+                        <span class="name">Ha igen, használod?</span>
+                        <em>{{ Model.ContentItem.GuildApplication2Part.SimCraftHasznalat.Value }}</em>
+                    </p>
                 </li>
                 <li>{{ Model.Felkeszules | Display }}</li>
                 <li>{{ Model.Elvarasok | Display }}</li>
