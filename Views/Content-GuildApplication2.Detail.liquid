@@ -10,18 +10,26 @@
             <h2>Karaktereid</h2>
             <ul>
                 <li>{{ Model.MainKarakter | Display }}</li>
+                {% if Model.ContentItem.GuildApplication2Part.MainKarakterArmoryLink.Value != null %}
                 <li>
                     <a href="{{ Model.ContentItem.GuildApplication2Part.MainKarakterArmoryLink.Value }}" target="_blank">Armory Link</a>
                 </li>
+                {% endif %}
+                {% if Model.ContentItem.GuildApplication2Part.NoncombatScreenshotURL.Value != null %}
                 <li>
                     <a href="{{ Model.ContentItem.GuildApplication2Part.NoncombatScreenshotURL.Value }}" target="_blank">Combat-on kívüli screenshot</a>
                 </li>
+                {% endif %}
+                {% if Model.ContentItem.GuildApplication2Part.CombatScreenshotURL.Value != null %}
                 <li>
                     <a href="{{ Model.ContentItem.GuildApplication2Part.CombatScreenshotURL.Value }}" target="_blank">Combat screenshot</a>
                 </li>
+                {% endif %}
+                {% if Model.ContentItem.GuildApplication2Part.CombatLogURL.Value != null %}
                 <li>
                     <a href="{{ Model.ContentItem.GuildApplication2Part.CombatLogURL.Value }}" target="_blank">Combat log</a>
                 </li>
+                {% endif %}
                 <li>{{ Model.AltKarakterek | Display }}</li>
             </ul>
         </div>
