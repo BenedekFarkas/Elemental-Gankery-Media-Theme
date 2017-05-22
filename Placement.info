@@ -66,6 +66,7 @@
                 Fields_Enumeration="-"
                 Fields_Input="-"
                 Fields_Link="-"
+                Fields_MediaLibraryUpload="-"
             />
         </Match>
         <Match DisplayType="Summary">
