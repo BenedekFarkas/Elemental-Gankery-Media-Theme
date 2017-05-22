@@ -160,6 +160,14 @@
         />
     </Match>
 
+    <!-- /jelentkezesek -->
+    <Match Path="/jelentkezesek">
+        <Place
+            Parts_Common_Metadata="-"
+            Parts_Title="-"
+        />
+    </Match>
+
     <!-- END Routes -->
     
 </Placement>
