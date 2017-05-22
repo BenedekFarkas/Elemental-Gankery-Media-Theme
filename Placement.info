@@ -64,7 +64,7 @@
                 Fields_Common_Text="-"
                 Fields_Boolean="-"
                 Fields_Enumeration="-"
-                Fields_InputField="-"
+                Fields_Input="-"
                 Fields_Link="-"
             />
         </Match>
