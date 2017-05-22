@@ -3871,6 +3871,9 @@ article.guild-application2.detail .content .guild-application-section p .name {
   display: block;
   font-weight: bold;
 }
+.guild-applications-projection-container ul {
+  list-style-type: none;
+}
 .widget-MainSiteSearch {
   float: right;
   min-width: 300px;
