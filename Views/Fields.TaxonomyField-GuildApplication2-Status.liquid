@@ -1,1 +1,5 @@
-﻿<span class="meta-status">| {{ Model.Terms[0].Name }}</span>
+﻿<div>
+    {% if Model.Terms != null and Model.Terms[0] != null %}
+    <span class="meta-status">| {{ Model.Terms[0].Name }}</span>
+    {% endif %}
+</div>
