@@ -20,9 +20,19 @@
                     <a href="{{ Model.ContentItem.GuildApplication2Part.NoncombatScreenshotURL.Value }}" target="_blank">Combat-on kívüli screenshot</a>
                 </li>
                 {% endif %}
+                {% if Model.ContentItem.GuildApplication2Part.NoncombatScreenshot.FirstMediaUrl != null %}
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication2Part.NoncombatScreenshot.FirstMediaUrl }}" target="_blank">Combat-on kívüli screenshot</a>
+                </li>
+                {% endif %}
                 {% if Model.ContentItem.GuildApplication2Part.CombatScreenshotURL.Value != null %}
                 <li>
                     <a href="{{ Model.ContentItem.GuildApplication2Part.CombatScreenshotURL.Value }}" target="_blank">Combat screenshot</a>
+                </li>
+                {% endif %}
+                {% if Model.ContentItem.GuildApplication2Part.CombatScreenshot.FirstMediaUrl != null %}
+                <li>
+                    <a href="{{ Model.ContentItem.GuildApplication2Part.CombatScreenshot.FirstMediaUrl }}" target="_blank">Combat screenshot</a>
                 </li>
                 {% endif %}
                 {% if Model.ContentItem.GuildApplication2Part.CombatLogURL.Value != null %}
