@@ -1,15 +1,12 @@
 ﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/common";
 
+@import "mixins";
 @import "variables";
 
 .blogpost-summary-wrapper
 {
     display: flex;
-    margin-bottom: 1rem;
-    background-color: @theme-dark;
-    padding: 10px;
-    border: 2px solid @theme-lightgrey;
-    border-radius: 5px;
+    .card-summary();
 
     .blogpost-summary-headerimage-container
     {
@@ -40,19 +37,8 @@ article
     {
         &.summary
         {
-            .make-column(@grid-columns / 2);
-            max-width: 48%;
-            height: 200px;
-            margin: 0 1% 2rem 1%;
-            background-color: @theme-dark;
-            padding: 15px;
-            border: 2px solid @theme-lightgrey;
-            border-radius: 5px;
-
-            &:nth-of-type(even)
-            {
-                float: right;
-            }
+            .make-column(@grid-columns);
+            .card-summary();
 
             h1
             {
@@ -66,11 +52,6 @@ article
         .meta-status
         {
             font-size: 1.4rem;
-        }
-
-        &.summary
-        {
-            min-height: 120px;
         }
 
         &.detail
@@ -103,5 +84,22 @@ article
     ul
     {
         list-style-type: none;
+        padding: 0;
+        display: block;
+        clear: both;
+    }
+}
+
+.link-style
+{
+    a
+    {
+        color: @wow-faction-alliance;
+
+        &:active, &:hover, &:focus
+        {
+            text-decoration: none;
+            color: @wow-quality-artifact !important;
+        }
     }
 }

@@ -3015,15 +3015,6 @@ body {
 .zone-content {
   padding-top: 0;
 }
-.link-style a {
-  color: #0C81CE;
-}
-.link-style a:active,
-.link-style a:hover,
-.link-style a:focus {
-  text-decoration: none;
-  color: #E6CC80 !important;
-}
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -3800,8 +3791,8 @@ legend {
 }
 .blogpost-summary-wrapper {
   display: flex;
-  margin-bottom: 1rem;
   background-color: #222427;
+  margin-bottom: 1rem;
   padding: 10px;
   border: 2px solid #37393D;
   border-radius: 5px;
@@ -3828,23 +3819,17 @@ article.guild-application2.summary {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 48%;
-  height: 200px;
-  margin: 0 1% 2rem 1%;
   background-color: #222427;
-  padding: 15px;
+  margin-bottom: 1rem;
+  padding: 10px;
   border: 2px solid #37393D;
   border-radius: 5px;
 }
 @media (min-width: 48em) {
   article.guild-application.summary,
   article.guild-application2.summary {
-    width: 50%;
+    width: 100%;
   }
-}
-article.guild-application.summary:nth-of-type(even),
-article.guild-application2.summary:nth-of-type(even) {
-  float: right;
 }
 article.guild-application.summary h1,
 article.guild-application2.summary h1 {
@@ -3852,9 +3837,6 @@ article.guild-application2.summary h1 {
 }
 article.guild-application2 .meta-status {
   font-size: 1.4rem;
-}
-article.guild-application2.summary {
-  min-height: 120px;
 }
 article.guild-application2.detail .content {
   margin-left: -15px;
@@ -3873,6 +3855,18 @@ article.guild-application2.detail .content .guild-application-section p .name {
 }
 .guild-applications-projection-container ul {
   list-style-type: none;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+.link-style a {
+  color: #0C81CE;
+}
+.link-style a:active,
+.link-style a:hover,
+.link-style a:focus {
+  text-decoration: none;
+  color: #E6CC80 !important;
 }
 .widget-MainSiteSearch {
   float: right;

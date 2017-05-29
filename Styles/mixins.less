@@ -1,15 +1,10 @@
-﻿@import "variables-wow";
+﻿@import "variables";
 
-.link-style
+.card-summary()
 {
-    a
-    {
-        color: @wow-faction-alliance;
-
-        &:active, &:hover, &:focus
-        {
-            text-decoration: none;
-            color: @wow-quality-artifact !important;
-        }
-    }
+    background-color: @theme-dark;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 2px solid @theme-lightgrey;
+    border-radius: 5px;
 }
