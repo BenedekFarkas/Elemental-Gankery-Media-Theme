@@ -3874,26 +3874,8 @@ article.guild-application2.detail .content .guild-application-section p .name {
   text-decoration: none;
   color: #E6CC80 !important;
 }
-.content-item .forum {
-  background-color: #222427;
-  margin-bottom: 1rem;
-  padding: 10px;
-  border: 2px solid #37393D;
-  border-radius: 5px;
-}
-.content-item .forum h1 {
-  margin-top: 0;
-}
-.content-item .thread {
-  background-color: #222427;
-  margin-bottom: 1rem;
-  padding: 10px;
-  border: 2px solid #37393D;
-  border-radius: 5px;
-}
-.content-item .thread h1 {
-  margin-top: 0;
-}
+.content-item .forum,
+.content-item .thread,
 .content-item .post {
   background-color: #222427;
   margin-bottom: 1rem;
@@ -3901,8 +3883,14 @@ article.guild-application2.detail .content .guild-application-section p .name {
   border: 2px solid #37393D;
   border-radius: 5px;
 }
+.content-item .forum h1,
+.content-item .thread h1,
 .content-item .post h1 {
   margin-top: 0;
+}
+.content-item .forum-threads,
+.content-item .thread-posts {
+  padding: 1rem 0 0 0;
 }
 .widget-MainSiteSearch {
   float: right;

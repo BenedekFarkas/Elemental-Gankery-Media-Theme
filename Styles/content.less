@@ -106,18 +106,16 @@ article
 
 .content-item
 {
-    & .forum
+    & .forum, & .thread, & .post
     {
         .card-summary();
     }
+}
 
-    & .thread
+.content-item
+{
+    & .forum-threads, & .thread-posts
     {
-        .card-summary();
-    }
-
-    & .post
-    {
-        .card-summary();
+        padding: 1rem 0 0 0;
     }
 }

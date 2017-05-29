@@ -1,6 +1,14 @@
 <Placement>
     
     <!-- Content Types -->
+    
+    <!-- Page -->
+    <Match ContentType="Page">
+        <Place
+            Parts_Common_Metadata="-"
+            Parts_Common_Metadata_Summary="-"
+        />
+    </Match>
 
     <!-- Blog -->
     <Match ContentType="Blog">
