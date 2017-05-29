@@ -3858,9 +3858,12 @@ article.guild-application2.detail .content .guild-application-section p .name {
 }
 .guild-applications-projection-container ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
   display: block;
   clear: both;
+}
+.guild-applications-projection-container .pager {
+  margin-bottom: 50px;
 }
 .link-style a {
   color: #0C81CE;
