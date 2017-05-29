@@ -3797,6 +3797,9 @@ legend {
   border: 2px solid #37393D;
   border-radius: 5px;
 }
+.blogpost-summary-wrapper h1 {
+  margin-top: 0;
+}
 .blogpost-summary-wrapper .blogpost-summary-headerimage-container {
   width: 33%;
 }
@@ -3867,6 +3870,36 @@ article.guild-application2.detail .content .guild-application-section p .name {
 .link-style a:focus {
   text-decoration: none;
   color: #E6CC80 !important;
+}
+.content-item .forum {
+  background-color: #222427;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
+}
+.content-item .forum h1 {
+  margin-top: 0;
+}
+.content-item .thread {
+  background-color: #222427;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
+}
+.content-item .thread h1 {
+  margin-top: 0;
+}
+.content-item .post {
+  background-color: #222427;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
+}
+.content-item .post h1 {
+  margin-top: 0;
 }
 .widget-MainSiteSearch {
   float: right;

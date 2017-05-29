@@ -39,11 +39,6 @@ article
         {
             .make-column(@grid-columns);
             .card-summary();
-
-            h1
-            {
-                margin-top: 0;
-            }
         }
     }
 
@@ -101,5 +96,23 @@ article
             text-decoration: none;
             color: @wow-quality-artifact !important;
         }
+    }
+}
+
+.content-item
+{
+    & .forum
+    {
+        .card-summary();
+    }
+
+    & .thread
+    {
+        .card-summary();
+    }
+
+    & .post
+    {
+        .card-summary();
     }
 }
