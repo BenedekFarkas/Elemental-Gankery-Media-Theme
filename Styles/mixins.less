@@ -1,5 +1,19 @@
 ﻿@import "variables";
 
+.link-style()
+{
+    a
+    {
+        color: @wow-faction-alliance;
+
+        &:active, &:hover, &:focus
+        {
+            text-decoration: none;
+            color: @wow-quality-artifact !important;
+        }
+    }
+}
+
 .card-summary()
 {
     background-color: @theme-dark;

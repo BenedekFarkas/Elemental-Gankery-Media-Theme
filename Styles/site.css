@@ -3903,15 +3903,6 @@ article.guild-application2.detail .content .guild-application-section p .name {
 .guild-applications-projection-container .pager {
   margin-bottom: 70px;
 }
-.link-style a {
-  color: #0C81CE;
-}
-.link-style a:active,
-.link-style a:hover,
-.link-style a:focus {
-  text-decoration: none;
-  color: #E6CC80 !important;
-}
 .content-item .forum,
 .content-item .thread,
 .content-item .post {
@@ -4042,6 +4033,9 @@ body #layout-main-container #layout-content,
 body #layout-main-container #aside-second {
   top: 117px;
   margin-bottom: 20px;
+}
+body #layout-main-container #layout-content {
+  padding-bottom: 20px;
 }
 body #layout-main-container .zone-content h1 {
   border-bottom: none !important;
