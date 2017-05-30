@@ -13,3 +13,25 @@
         margin-top: 0;
     }
 }
+
+.class-color (@classname)
+{
+    .class-color-@{classname}
+    {
+        @colorname: "wow-class-@{classname}";
+        color: @@colorname;
+    }
+}
+
+.class-color(deathknight);
+.class-color(demonhunter);
+.class-color(druid);
+.class-color(hunter);
+.class-color(mage);
+.class-color(monk);
+.class-color(paladin);
+.class-color(priest);
+.class-color(rogue);
+.class-color(shaman);
+.class-color(warlock);
+.class-color(warrior);

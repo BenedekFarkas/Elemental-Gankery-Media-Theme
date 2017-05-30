@@ -3015,6 +3015,42 @@ body {
 .zone-content {
   padding-top: 0;
 }
+.class-color-deathknight {
+  color: #C41F3B;
+}
+.class-color-demonhunter {
+  color: #A330C9;
+}
+.class-color-druid {
+  color: #FF7D0A;
+}
+.class-color-hunter {
+  color: #ABD473;
+}
+.class-color-mage {
+  color: #69CCF0;
+}
+.class-color-monk {
+  color: #00FF96;
+}
+.class-color-paladin {
+  color: #F58CBA;
+}
+.class-color-priest {
+  color: #FFFFFF;
+}
+.class-color-rogue {
+  color: #FFF569;
+}
+.class-color-shaman {
+  color: #0070DE;
+}
+.class-color-warlock {
+  color: #9482C9;
+}
+.class-color-warrior {
+  color: #C79C6E;
+}
 .nav {
   margin-bottom: 0;
   padding-left: 0;
