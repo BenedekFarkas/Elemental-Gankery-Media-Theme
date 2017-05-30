@@ -153,7 +153,7 @@
     <!-- Routes -->
 
     <!-- /Profile/Edit -->
-    <Match Url="/Profile/Edit">
+    <Match Path="/Profile/Edit">
         <Place
             Fields_Boolean_Edit-DisplayInRoster="-"
         />
