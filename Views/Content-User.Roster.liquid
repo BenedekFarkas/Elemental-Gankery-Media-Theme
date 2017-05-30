@@ -1,6 +1,8 @@
 ﻿<ul>
     <li>
-        <a href="https://worldofwarcraft.com/en-gb/character/ragnaros/{{ Model.ContentItem.MainCharacter.Name.Value }}">{{ Model.ContentItem.MainCharacter.Name.Value }}</a>
+        <strong>
+            <a href="https://worldofwarcraft.com/en-gb/character/ragnaros/{{ Model.ContentItem.MainCharacter.Name.Value }}">{{ Model.ContentItem.MainCharacter.Name.Value }}</a>
+        </strong>
         {% if Model.ContentItem.MainCharacter.Class.Value != null %}
 
         {% case Model.ContentItem.MainCharacter.Class.Value %}
@@ -44,13 +46,17 @@
         {% assign normalizedclassname = "none" %}
         {% endcase %}
 
-        (<span class="class-color-{{ normalizedclassname }}">{{ Model.ContentItem.MainCharacter.Class.Value }}</span>)
+        <span>
+            (<span class="class-color-{{ normalizedclassname }}">{{ Model.ContentItem.MainCharacter.Class.Value }}</span>)
+        </span>
+        {% endif %}
+
+        {% if Model.ContentItem.MainCharacter.Name.Value != Model.ContentItem.UserPart.UserName %}
+        <span>
+            ({{ Model.ContentItem.UserPart.UserName }})
+        </span>
         {% endif %}
     </li>
-
-    {% if Model.ContentItem.MainCharacter.Name.Value != Model.ContentItem.UserPart.UserName %}
-    <li>Felhasználó: {{ Model.ContentItem.UserPart.UserName }}</li>
-    {% endif %}
 
     <li>{{ Model.GuildMemberRaidNapok | Display }}</li>
 </ul>
