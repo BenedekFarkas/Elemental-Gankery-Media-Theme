@@ -51,4 +51,6 @@
     {% if Model.ContentItem.MainCharacter.Name.Value != Model.ContentItem.UserPart.UserName %}
     <li>Felhasználó: {{ Model.ContentItem.UserPart.UserName }}</li>
     {% endif %}
+
+    <li>{{ Model.GuildMemberRaidNapok | Display }}</li>
 </ul>

@@ -3927,7 +3927,7 @@ article.guild-application2.detail .content .guild-application-section p .name {
 .content-item .thread-posts {
   padding-top: 1rem;
 }
-.roster {
+#roster .roster {
   position: relative;
   float: left;
   width: 100%;
@@ -3936,11 +3936,11 @@ article.guild-application2.detail .content .guild-application-section p .name {
   padding-right: 15px;
 }
 @media (min-width: 48em) {
-  .roster {
+  #roster .roster {
     width: 100%;
   }
 }
-.roster-character {
+#roster .roster-character {
   background-color: #222427;
   margin-bottom: 1rem;
   padding: 10px;
@@ -3953,23 +3953,23 @@ article.guild-application2.detail .content .guild-application-section p .name {
   padding-left: 15px;
   padding-right: 15px;
 }
-.roster-character h1 {
+#roster .roster-character h1 {
   margin-top: 0;
 }
 @media (min-width: 47.95em) {
-  .roster-character {
+  #roster .roster-character {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 57.8em) {
-  .roster-character {
+  #roster .roster-character {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 68.6em) {
-  .roster-character {
+  #roster .roster-character {
     float: left;
     width: 33.33333333%;
   }

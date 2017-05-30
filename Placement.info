@@ -141,7 +141,7 @@
     <Match ContentType="User">
         <Match DisplayType="Roster">
             <Place
-                Fields_Enumeration-Class="MainCharacterClass:1"
+                Fields_Enumeration-RaidNapok="GuildMemberRaidNapok:1"
             />
         </Match>
     </Match>
