@@ -3895,11 +3895,6 @@ article.guild-application2.detail .content .guild-application-section p .name {
   display: block;
   font-weight: bold;
 }
-.guild-applications-projection-container ul {
-  padding-bottom: 30px;
-  display: block;
-  clear: both;
-}
 .content-item .forum,
 .content-item .thread,
 .content-item .post {
@@ -4029,7 +4024,6 @@ body #layout-main-container #aside-first,
 body #layout-main-container #layout-content,
 body #layout-main-container #aside-second {
   top: 117px;
-  padding-bottom: 30px;
 }
 body #layout-main-container .zone-content h1 {
   border-bottom: none !important;
