@@ -9,53 +9,53 @@
             ({{ Model.ContentItem.UserPart.UserName }})
         </span>
         {% endif %}
+
+        {% if Model.ContentItem.MainCharacter.Class.Value != null %}
+
+        {% case Model.ContentItem.MainCharacter.Class.Value %}
+        {% when "Death Knight" %}
+        {% assign normalizedclassname = "deathknight" %}
+
+        {% when "Demon Hunter" %}
+        {% assign normalizedclassname = "demonhunter" %}
+
+        {% when "Druid" %}
+        {% assign normalizedclassname = "druid" %}
+
+        {% when "Hunter" %}
+        {% assign normalizedclassname = "hunter" %}
+
+        {% when "Mage" %}
+        {% assign normalizedclassname = "mage" %}
+
+        {% when "Monk" %}
+        {% assign normalizedclassname = "monk" %}
+
+        {% when "Paladin" %}
+        {% assign normalizedclassname = "paladin" %}
+
+        {% when "Priest" %}
+        {% assign normalizedclassname = "priest" %}
+
+        {% when "Rogue" %}
+        {% assign normalizedclassname = "rogue" %}
+
+        {% when "Shaman" %}
+        {% assign normalizedclassname = "shaman" %}
+
+        {% when "Warlock" %}
+        {% assign normalizedclassname = "warlock" %}
+
+        {% when "Warrior" %}
+        {% assign normalizedclassname = "warrior" %}
+
+        {% else %}
+        {% assign normalizedclassname = "none" %}
+        {% endcase %}
+
+        <span class="float-right class-color-{{ normalizedclassname }}">{{ Model.ContentItem.MainCharacter.Class.Value }}</span>
+        {% endif %}
     </li>
-
-    {% if Model.ContentItem.MainCharacter.Class.Value != null %}
-
-    {% case Model.ContentItem.MainCharacter.Class.Value %}
-    {% when "Death Knight" %}
-    {% assign normalizedclassname = "deathknight" %}
-
-    {% when "Demon Hunter" %}
-    {% assign normalizedclassname = "demonhunter" %}
-
-    {% when "Druid" %}
-    {% assign normalizedclassname = "druid" %}
-
-    {% when "Hunter" %}
-    {% assign normalizedclassname = "hunter" %}
-
-    {% when "Mage" %}
-    {% assign normalizedclassname = "mage" %}
-
-    {% when "Monk" %}
-    {% assign normalizedclassname = "monk" %}
-
-    {% when "Paladin" %}
-    {% assign normalizedclassname = "paladin" %}
-
-    {% when "Priest" %}
-    {% assign normalizedclassname = "priest" %}
-
-    {% when "Rogue" %}
-    {% assign normalizedclassname = "rogue" %}
-
-    {% when "Shaman" %}
-    {% assign normalizedclassname = "shaman" %}
-
-    {% when "Warlock" %}
-    {% assign normalizedclassname = "warlock" %}
-
-    {% when "Warrior" %}
-    {% assign normalizedclassname = "warrior" %}
-
-    {% else %}
-    {% assign normalizedclassname = "none" %}
-    {% endcase %}
-
-    <li class="class-color-{{ normalizedclassname }}">{{ Model.ContentItem.MainCharacter.Class.Value }}</li>
-    {% endif %}
 
     <li>{{ Model.GuildMemberRaidNapok | Display }}</li>
 </ul>
