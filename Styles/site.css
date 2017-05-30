@@ -3896,7 +3896,7 @@ article.guild-application2.detail .content .guild-application-section p .name {
   font-weight: bold;
 }
 .guild-applications-projection-container ul {
-  padding-left: 0;
+  padding-bottom: 30px;
   display: block;
   clear: both;
 }
