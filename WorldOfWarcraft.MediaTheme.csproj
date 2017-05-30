@@ -104,6 +104,7 @@
     <Content Include="Views\Fields.Enumeration-Rang.liquid" />
     <Content Include="Views\Fields.Input-IncombatUIscreenshot.liquid" />
     <Content Include="Views\Fields.Input-Armorylink.liquid" />
+    <Content Include="Views\Content-User.Roster.liquid" />
     <None Include="Views\Content-GuildApplication.Summary.liquid" />
     <Content Include="Views\Content-GuildApplication2.Detail.liquid" />
     <None Include="Views\Content-GuildApplication2.Summary.liquid" />

@@ -1,0 +1,11 @@
+﻿<ul>
+    <li>
+        <a href="https://worldofwarcraft.com/en-gb/character/ragnaros/{{ Model.ContentItem.MainCharacter.Name.Value }}">{{ Model.ContentItem.MainCharacter.Name.Value }}</a>
+        {% if Model.ContentItem.MainCharacter.Class.Value != null %}
+            <span>({{ Model.ContentItem.MainCharacter.Class.Value }})</span>
+        {% endif %}
+    </li>
+    {% if Model.ContentItem.MainCharacter.Name.Value != Model.ContentItem.UserPart.UserName %}
+    <li>Felhasználó: {{ Model.ContentItem.UserPart.UserName }}</li>
+    {% endif %}
+</ul>

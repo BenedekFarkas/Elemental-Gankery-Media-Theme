@@ -3857,7 +3857,6 @@ article.guild-application2.detail .content .guild-application-section p .name {
   font-weight: bold;
 }
 .guild-applications-projection-container ul {
-  list-style-type: none;
   padding-left: 0;
   display: block;
   clear: both;
@@ -3890,7 +3889,54 @@ article.guild-application2.detail .content .guild-application-section p .name {
 }
 .content-item .forum-threads,
 .content-item .thread-posts {
-  padding: 1rem 0 0 0;
+  padding-top: 1rem;
+}
+.roster {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 48em) {
+  .roster {
+    width: 100%;
+  }
+}
+.roster-character {
+  background-color: #222427;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.roster-character h1 {
+  margin-top: 0;
+}
+@media (min-width: 47.95em) {
+  .roster-character {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 57.8em) {
+  .roster-character {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 68.6em) {
+  .roster-character {
+    float: left;
+    width: 33.33333333%;
+  }
 }
 .widget-MainSiteSearch {
   float: right;
@@ -3962,6 +4008,9 @@ body #layout-main-container #aside-second {
 body #layout-main-container .zone-content h1 {
   border-bottom: none !important;
 }
+body #layout-main-container .zone-content ul {
+  padding-left: 0;
+}
 body .zone-footer {
   border-top: 1px solid #00CCFF;
   position: fixed !important;
@@ -3970,4 +4019,7 @@ body .zone-footer {
 }
 body .zone-footer .user-display {
   display: none;
+}
+ul {
+  list-style-type: none;
 }

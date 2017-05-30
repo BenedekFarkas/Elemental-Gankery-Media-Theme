@@ -138,6 +138,14 @@
         </Match>
     </Match>
 
+    <Match ContentType="User">
+        <Match DisplayType="Roster">
+            <Place
+                Fields_Enumeration-Class="MainCharacterClass:1"
+            />
+        </Match>
+    </Match>
+
     <!-- END Content Types -->
 
     
