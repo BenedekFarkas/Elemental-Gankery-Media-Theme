@@ -3541,7 +3541,7 @@ body {
 }
 .zone-navigation .widget-menu-widget .menu li {
   width: auto;
-  min-width: 170px;
+  padding: 0 1rem 0 1rem;
 }
 .zone-navigation .widget-menu-widget .menu li.current a {
   background-color: #222427;
