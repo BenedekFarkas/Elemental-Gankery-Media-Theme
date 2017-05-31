@@ -3828,6 +3828,16 @@ input[type="color"] {
 legend {
   color: #9D9D9D;
 }
+.card-summary {
+  background-color: #222427;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 2px solid #37393D;
+  border-radius: 5px;
+}
+.card-summary h1 {
+  margin-top: 0;
+}
 .blogpost-summary-wrapper {
   display: flex;
   background-color: #222427;
@@ -3835,6 +3845,9 @@ legend {
   padding: 10px;
   border: 2px solid #37393D;
   border-radius: 5px;
+}
+.blogpost-summary-wrapper h1 {
+  margin-top: 0;
 }
 .blogpost-summary-wrapper h1 {
   margin-top: 0;
@@ -3877,6 +3890,10 @@ article.guild-application.summary h1,
 article.guild-application2.summary h1 {
   margin-top: 0;
 }
+article.guild-application.summary h1,
+article.guild-application2.summary h1 {
+  margin-top: 0;
+}
 article.guild-application2 .meta-status {
   font-size: 1.4rem;
 }
@@ -3903,6 +3920,11 @@ article.guild-application2.detail .content .guild-application-section p .name {
   padding: 10px;
   border: 2px solid #37393D;
   border-radius: 5px;
+}
+.content-item .forum h1,
+.content-item .thread h1,
+.content-item .post h1 {
+  margin-top: 0;
 }
 .content-item .forum h1,
 .content-item .thread h1,
@@ -3937,6 +3959,9 @@ article.guild-application2.detail .content .guild-application-section p .name {
   min-height: 64px;
   min-width: 330px;
   margin-right: 1rem;
+}
+#roster .roster-character h1 {
+  margin-top: 0;
 }
 #roster .roster-character h1 {
   margin-top: 0;
