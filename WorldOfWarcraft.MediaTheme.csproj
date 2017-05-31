@@ -108,11 +108,13 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Styles\general.less" />
+    <Content Include="Views\Parts.Common.Metadata.Summary.liquid" />
     <None Include="Views\Content-GuildApplication.Summary.liquid" />
     <Content Include="Views\Content-GuildApplication2.Detail.liquid" />
     <None Include="Views\Content-GuildApplication2.Summary.liquid" />
     <Content Include="Views\Fields.TaxonomyField-GuildApplication2-Status.liquid" />
     <None Include="Views\Parts.Comments.Count.liquid" />
+    <Content Include="Views\Parts.Common.Metadata.liquid" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
