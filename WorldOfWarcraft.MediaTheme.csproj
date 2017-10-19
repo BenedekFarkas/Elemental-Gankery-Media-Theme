@@ -74,6 +74,7 @@
     <Content Include="Images\favicon.ico" />
     <Content Include="Styles\forms.less" />
     <Content Include="Styles\content.less" />
+    <Content Include="Licence.md" />
     <None Include="Styles\mixins.less" />
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>

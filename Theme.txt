@@ -1,6 +1,6 @@
-Name: World of Warcraft (Media Theme)
-Author: Benedek Farkas
+Name: Elemental Gankery (Media Theme)
+Author: Benedek Farkas (Lombiq Technologies Ltd.)
 Website: http://elementalgankery.hu
-Description: Media Theme for Orchard CMS for World of Warcraft-related websites with "Lombiq.PrettyGoodBootstrapBaseTheme" as the base theme.
+Description: DotNest Media Theme for the Hungarian World of Warcraft guild Elemental Gankery from EU-Ragnaros.
 Version: 1.0
 BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
